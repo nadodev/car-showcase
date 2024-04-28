@@ -1,4 +1,4 @@
-import { Hero } from "@/components";
+import { CustonFilter, Hero, SearchBar } from "@/components";
 
 export default function Home() {
   return (
@@ -9,6 +9,14 @@ export default function Home() {
       <div className='home__text-container'>
         <h1 className='text-4xl font-extrabold'>Car Catalogue</h1>
         <p>Explore out cars you might like</p>
+      </div>
+      <div className="home__filters">
+        <SearchBar />
+
+        <div className="home__filter-container">
+          <CustonFilter title="fuel" />
+          <CustonFilter title="year" />
+        </div>
       </div>
     </div>
   </main>
